@@ -1,5 +1,3 @@
 <div>
-  ![image](https://i.imgur.com/w7AnPba.png)
+  <img src="https://i.imgur.com/w7AnPba.png" alt="RedSea Logo">
 </div>
-
-
