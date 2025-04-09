@@ -11,4 +11,14 @@
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="9.0.0"/>
     </ItemGroup>
 
+    <ItemGroup>
+      <Folder Include="Data\DTOs\" />
+      <Folder Include="Data\Enums\" />
+      <Folder Include="Data\Models\" />
+      <Folder Include="Middleware\" />
+      <Folder Include="Services\Authentication\" />
+      <Folder Include="Services\JWT\" />
+      <Folder Include="Services\ReportGenerator\" />
+    </ItemGroup>
+
 </Project>
