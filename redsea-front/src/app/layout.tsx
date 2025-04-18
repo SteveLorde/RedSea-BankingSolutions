@@ -1,10 +1,31 @@
 import "./globals.css";
+import {
+    assertIsLocale,
+    baseLocale,
+    Locale,
+    overwriteGetLocale,
+    overwriteGetUrlOrigin,
+} from "@/services/language/runtime";
+import {cache} from "react";
+import {headers} from "next/headers";
 
-export default function RootLayout({
-                                       children,
-                                   }: Readonly<{
+
+const ssrLocale = cache(() => ({locale: baseLocale, origin: "http://localhost"}));
+
+overwriteGetLocale(() => assertIsLocale(ssrLocale().locale));
+
+overwriteGetUrlOrigin(() => ssrLocale().origin);
+
+export default async function RootLayout({
+                                             children,
+                                         }: Readonly<{
     children: React.ReactNode;
 }>) {
+    // @ts-expect-error
+    ssrLocale().locale = headers().get("x-paraglide-locale") as Locale;
+    // @ts-expect-error
+    ssrLocale().origin = new URL(headers().get("x-paraglide-request-url")).origin;
+
     return (
         <html lang="en">
         <body>
