@@ -1,3 +1,5 @@
+'use client'
+
 import {useState} from "react";
 import DashboardBanking from "@/app/dashboard/_banking/main";
 import DashboardInvesting from "@/app/dashboard/_investing/main";
