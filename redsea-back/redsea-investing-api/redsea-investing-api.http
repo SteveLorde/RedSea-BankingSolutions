@@ -1,0 +1,6 @@
+@redsea_investing_api_HostAddress = http://localhost:5155
+
+GET {{redsea_investing_api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

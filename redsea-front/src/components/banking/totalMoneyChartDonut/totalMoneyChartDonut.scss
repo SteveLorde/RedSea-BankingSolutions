@@ -1,0 +1,41 @@
+$elementCol1: #53e40a;
+$elementCol2: #ead619;
+$elementCol3: #09b8ed;
+
+.donut {
+  .donut-hole {
+    fill: #ffffff;
+  }
+
+  .donut-ring {
+    fill: transparent;
+    stroke: #BF616A;
+    stroke-width: 3;
+  }
+
+  .donut-segment {
+    fill: transparent;
+    stroke: $elementCol1;
+    stroke-width: 3;
+    stroke-dasharray: 85 15;
+    stroke-dashoffset: 25;
+  }
+
+  .donut-border {
+    fill: transparent;
+    stroke: $color1;
+    stroke-width: 5;
+  }
+
+  .donut-text {
+    .donut-text-label {
+
+    }
+
+    .donut-text-value {
+
+    }
+  }
+}
+
+

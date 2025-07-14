@@ -2,7 +2,7 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redsea-api", "redsea-api\redsea-api.csproj", "{6CF9F70F-F106-47AD-BEF9-06BF60C973E0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redsea-api-invest", "redsea-api-invest\redsea-api-invest.csproj", "{16E260B8-95FE-4330-A066-87CFCBC76891}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "redsea-investing-api", "redsea-investing-api\redsea-investing-api.csproj", "{C77ECF4E-2D80-472B-B05F-B4AAE56A5B79}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -14,9 +14,9 @@ Global
 		{6CF9F70F-F106-47AD-BEF9-06BF60C973E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6CF9F70F-F106-47AD-BEF9-06BF60C973E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6CF9F70F-F106-47AD-BEF9-06BF60C973E0}.Release|Any CPU.Build.0 = Release|Any CPU
-		{16E260B8-95FE-4330-A066-87CFCBC76891}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16E260B8-95FE-4330-A066-87CFCBC76891}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16E260B8-95FE-4330-A066-87CFCBC76891}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16E260B8-95FE-4330-A066-87CFCBC76891}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C77ECF4E-2D80-472B-B05F-B4AAE56A5B79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C77ECF4E-2D80-472B-B05F-B4AAE56A5B79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C77ECF4E-2D80-472B-B05F-B4AAE56A5B79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C77ECF4E-2D80-472B-B05F-B4AAE56A5B79}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
