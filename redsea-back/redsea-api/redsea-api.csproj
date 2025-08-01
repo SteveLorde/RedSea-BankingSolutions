@@ -8,21 +8,20 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <PackageReference Include="Konscious.Security.Cryptography.Argon2" Version="1.3.1" />
+        <PackageReference Include="MailKit" Version="4.13.0" />
         <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="10.0.0-preview.5.25277.114" />
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.7">
-          <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
-          <PrivateAssets>all</PrivateAssets>
-        </PackageReference>
-        <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="9.0.7" />
+        <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.13.0" />
     </ItemGroup>
 
     <ItemGroup>
-      <Folder Include="Data\DTOs\" />
-      <Folder Include="Data\Enums\" />
+      <Folder Include="Data\" />
       <Folder Include="Middleware\" />
-      <Folder Include="Services\Authentication\" />
-      <Folder Include="Services\JWT\" />
       <Folder Include="Services\ReportGenerator\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\redsea-database\redsea-database.csproj" />
     </ItemGroup>
 
 </Project>

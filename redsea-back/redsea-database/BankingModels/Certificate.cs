@@ -1,4 +1,4 @@
-﻿namespace redsea_api.Data.Models;
+﻿namespace redsea_database.BankingModels;
 
 public class Certificate
 {

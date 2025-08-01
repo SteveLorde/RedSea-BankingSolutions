@@ -1,11 +1,22 @@
 {
   "version": 2,
-  "dgSpecHash": "jB7bLx0gpf4=",
+  "dgSpecHash": "mAKOVYLCBxo=",
   "success": true,
   "projectFilePath": "D:\\Apps\\Projects\\RedSea\\redsea-back\\redsea-investing-api\\redsea-investing-api.csproj",
   "expectedPackageFiles": [
     "D:\\Apps\\NuGet\\microsoft.aspnetcore.openapi\\10.0.0-preview.5.25277.114\\microsoft.aspnetcore.openapi.10.0.0-preview.5.25277.114.nupkg.sha512",
-    "D:\\Apps\\NuGet\\microsoft.openapi\\2.0.0-preview.18\\microsoft.openapi.2.0.0-preview.18.nupkg.sha512"
+    "D:\\Apps\\NuGet\\microsoft.data.sqlite.core\\10.0.0-preview.6.25358.103\\microsoft.data.sqlite.core.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "D:\\Apps\\NuGet\\microsoft.entityframeworkcore\\10.0.0-preview.6.25358.103\\microsoft.entityframeworkcore.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "D:\\Apps\\NuGet\\microsoft.entityframeworkcore.abstractions\\10.0.0-preview.6.25358.103\\microsoft.entityframeworkcore.abstractions.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "D:\\Apps\\NuGet\\microsoft.entityframeworkcore.relational\\10.0.0-preview.6.25358.103\\microsoft.entityframeworkcore.relational.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "D:\\Apps\\NuGet\\microsoft.entityframeworkcore.sqlite\\10.0.0-preview.6.25358.103\\microsoft.entityframeworkcore.sqlite.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "D:\\Apps\\NuGet\\microsoft.entityframeworkcore.sqlite.core\\10.0.0-preview.6.25358.103\\microsoft.entityframeworkcore.sqlite.core.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "D:\\Apps\\NuGet\\microsoft.extensions.dependencymodel\\10.0.0-preview.6.25358.103\\microsoft.extensions.dependencymodel.10.0.0-preview.6.25358.103.nupkg.sha512",
+    "D:\\Apps\\NuGet\\microsoft.openapi\\2.0.0-preview.18\\microsoft.openapi.2.0.0-preview.18.nupkg.sha512",
+    "D:\\Apps\\NuGet\\sqlitepclraw.bundle_e_sqlite3\\2.1.11\\sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "D:\\Apps\\NuGet\\sqlitepclraw.core\\2.1.11\\sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "D:\\Apps\\NuGet\\sqlitepclraw.lib.e_sqlite3\\2.1.11\\sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "D:\\Apps\\NuGet\\sqlitepclraw.provider.e_sqlite3\\2.1.11\\sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
   ],
   "logs": []
 }

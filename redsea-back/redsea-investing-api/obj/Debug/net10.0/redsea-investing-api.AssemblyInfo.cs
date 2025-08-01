@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("redsea-investing-api")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef21eb96484645d401bc635c8781596b66fff85a")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1d812fcf0e5c724208ecac0484b08b61b85db28d")]
 [assembly: System.Reflection.AssemblyProductAttribute("redsea-investing-api")]
 [assembly: System.Reflection.AssemblyTitleAttribute("redsea-investing-api")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

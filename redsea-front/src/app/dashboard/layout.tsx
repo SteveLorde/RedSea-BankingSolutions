@@ -1,5 +1,6 @@
-import Navbar from "@/components/dashboard/navbar/navbar";
-import Footer from "@/components/dashboard/footer/footer";
+import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
+import { GlobalContextProvider } from "@/services/stateManagement/contexts/globalContext";
 
 export default function DashboardLayout({ children }: { children: React.ReactNode }) {
   return (
@@ -7,7 +8,7 @@ export default function DashboardLayout({ children }: { children: React.ReactNod
       <body>
         <main>
           <Navbar />
-          {children}
+          <GlobalContextProvider>{children}</GlobalContextProvider>
           <Footer />
         </main>
       </body>

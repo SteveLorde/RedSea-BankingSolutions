@@ -1,20 +1,17 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import DashboardBanking from '@/app/dashboard/_banking/main';
-import DashboardInvesting from '@/app/dashboard/_investing/main';
+import { useGlobalContext } from "@/services/stateManagement/contexts/globalContext";
 
 export default function Page() {
-  const [activeDashboardType, setActiveDashboardType] = useState<number>(0);
-  const [activeTab, setActiveTab] = useState<React.ReactElement>();
+  const {} = useGlobalContext();
 
   function switchToDashboardTab() {
     switch (activeDashboardType) {
-      case 0:
-        setActiveTab(<DashboardBanking />);
+      case banking:
+        globalContext.setActiveDashboardTab(0);
         break;
-      case 1:
-        setActiveTab(<DashboardInvesting />);
+      case invest:
+        globalContext.setActiveDashboardTab(1);
         break;
     }
   }
