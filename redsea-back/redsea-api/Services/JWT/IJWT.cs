@@ -2,5 +2,5 @@
 
 public interface IJWT
 {
-    public string GenerateToken(Guid userId, string userName);
+    public string GenerateToken(Guid userId);
 }

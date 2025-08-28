@@ -2,7 +2,7 @@
 
 public record ClientGeneralData(
     string IsActive,
-    float AccountBalance,
-    float CertificatesBalance,
-    float LoansBalance
-    ) : TDTO;
+    decimal AccountBalance,
+    decimal CertificatesBalance,
+    decimal LoansBalance
+) : TDTO;

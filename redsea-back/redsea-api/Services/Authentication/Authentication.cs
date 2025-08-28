@@ -16,9 +16,9 @@ public class Authentication(ReadOnlyDataContext readOnlyDataContext, IConfigurat
         {
             return false;
         }
-        
+
         var check = Hashing.VerifyHash(password, user.HashedPassword, envConfig["PassSalt"]);
-        
+
         return await Task.FromResult(check);
     }
 

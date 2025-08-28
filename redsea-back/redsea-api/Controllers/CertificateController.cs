@@ -1,8 +1,6 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿namespace redsea_api.Controllers;
 
-namespace redsea_api.Controllers;
-
+[Authorize]
 public class CertificateController : BaseController
 {
-	
 }

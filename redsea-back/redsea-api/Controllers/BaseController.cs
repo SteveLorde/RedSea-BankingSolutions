@@ -6,5 +6,5 @@ namespace redsea_api.Controllers;
 [ApiController]
 public class BaseController() : Controller
 {
-    
+
 }

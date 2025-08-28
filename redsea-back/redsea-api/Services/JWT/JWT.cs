@@ -3,35 +3,33 @@ using System.Security.Claims;
 using System.Text;
 using Microsoft.IdentityModel.Tokens;
 using redsea_database;
+using redsea_database.BankingModels;
 
 namespace redsea_api.Services.JWT;
 
 public class JWT(IConfiguration config, ReadOnlyDataContext readOnlyDataContext) : IJWT
 {
-    public string GenerateToken(Guid userId, string userName)
+    public string GenerateToken(Guid userId)
     {
-        var user = readOnlyDataContext.Clients.First(c => c.Id == userId);
-        
-        var secretKey =
+        Client user = readOnlyDataContext.Clients.First(c => c.Id == userId);
+
+        SymmetricSecurityKey secretKey =
             new SymmetricSecurityKey(
                 Encoding.UTF8.GetBytes(config["JWT:Secret"] ?? throw new InvalidOperationException("Secret Key not found")));
-        
-        var creds = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
-        
-        List<Claim> claims = new List<Claim>
-        {
-            new Claim(ClaimTypes.Name, userName)
-        };
-        
-        var tokenData = new JwtSecurityToken(
-            issuer: "RedSea",
-            audience: "RedSeaClient",
-            claims: claims,
+
+        SigningCredentials creds = new SigningCredentials(secretKey, SecurityAlgorithms.HmacSha256);
+
+        List<Claim> claims = new List<Claim>();
+
+        JwtSecurityToken tokenData = new JwtSecurityToken(
+            "RedSea",
+            "RedSeaClient",
+            claims,
             expires: DateTime.Now.AddDays(2),
             signingCredentials: creds
         );
-        
-        var token = new JwtSecurityTokenHandler().WriteToken(tokenData);
+
+        string? token = new JwtSecurityTokenHandler().WriteToken(tokenData);
 
         return token;
     }

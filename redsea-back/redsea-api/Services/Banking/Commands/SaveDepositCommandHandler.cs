@@ -9,10 +9,10 @@ public class SaveDepositCommandHandler(DataContext dataContext) : ICommandHandle
     public async Task<bool> HandleAsync(SaveDepositCommand command)
     {
         var account = await dataContext.Accounts.FirstAsync(a => a.Id == command.AccountId);
-        
+
         // Note: there should be a method to convert currency
         account.Balance += command.Amount;
-        
+
         await dataContext.SaveChangesAsync();
 
         return true;

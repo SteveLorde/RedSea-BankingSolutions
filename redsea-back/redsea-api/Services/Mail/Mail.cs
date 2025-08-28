@@ -11,7 +11,7 @@ public class Mail(IConfiguration config) : IMail
         var emailSettings = config.GetSection("Email:Settings");
         var smtpSettings = config.GetSection("Email:Smtp");
         var sender = config["Sender"];
-        
+
         var message = new MimeMessage();
         message.From.Add(new MailboxAddress("Sender Name", sender));
         message.To.Add(new MailboxAddress("Recipient Name", mailRequest.To));
@@ -26,7 +26,7 @@ public class Mail(IConfiguration config) : IMail
         {
             check = smtpClient.SendAsync(message).IsCompletedSuccessfully;
         }
-        
+
         await smtpClient.DisconnectAsync(true);
 
         return check;

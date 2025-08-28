@@ -1,18 +1,17 @@
-﻿using Microsoft.EntityFrameworkCore;
-using redsea_api.Services.Commands;
-using redsea_database;
+﻿using redsea_api.Services.Commands;
 using redsea_database.DTOs.Banking;
 
 namespace redsea_api.Services.Banking.Commands;
 
-public class GetClientInfoGetCommand : ICommand<ClientInfo>
+public class GetClientInfoCommand : ICommand<ClientInfo>
 {
-    public GetClientInfoGetCommand(Guid callerId)
+    public GetClientInfoCommand(Guid callerId)
     {
         TimeStamp = DateTime.Now;
         CallerId = callerId;
     }
-    
+
     public DateTime TimeStamp { get; set; }
+
     public Guid CallerId { get; set; }
 }
